@@ -1,0 +1,26 @@
+{
+  "name": "video-pipeline-skills",
+  "private": true,
+  "version": "0.1.1",
+  "description": "短视频生产流水线的 19 个宿主中立 skill（Claude Code / Codex / 任何支持 SKILL.md 的宿主）",
+  "license": "MIT",
+  "author": {
+    "name": "vfvrpq",
+    "url": "https://github.com/439436269-ctrl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/439436269-ctrl/video-pipeline-skills.git"
+  },
+  "scripts": {
+    "verify": "node tools/verify-repo.mjs --claude",
+    "verify:ci": "node tools/verify-repo.mjs",
+    "sync": "node tools/sync-skills.mjs --write",
+    "sync:check": "node tools/sync-skills.mjs --check",
+    "list": "node install.mjs --list",
+    "install:claude": "node install.mjs --host claude"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

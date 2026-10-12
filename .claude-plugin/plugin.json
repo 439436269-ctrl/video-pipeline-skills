@@ -1,0 +1,20 @@
+{
+  "name": "video-pipeline",
+  "description": "19 个短视频生产流水线 skill：1 个总入口 + 1 个编排 + 17 个原子能力，覆盖 TTS 读音校正、文生图、文生视频、图片运镜、成片合成、封面、成片核验、数据复盘与四平台发布。",
+  "version": "0.1.1",
+  "author": {
+    "name": "vfvrpq",
+    "url": "https://github.com/439436269-ctrl"
+  },
+  "homepage": "https://github.com/439436269-ctrl/video-pipeline-skills",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "short-video",
+    "short-drama",
+    "ffmpeg",
+    "tts",
+    "claude-code",
+    "codex"
+  ]
+}

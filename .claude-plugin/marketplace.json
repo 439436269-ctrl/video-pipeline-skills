@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "video-pipeline-skills",
+  "description": "短视频生产流水线的 19 个 skill（编排 + 原子能力）：从选题、配音、出图、出视频、合成、封面、核验，到多平台发布与数据复盘。",
+  "owner": {
+    "name": "vfvrpq",
+    "url": "https://github.com/439436269-ctrl"
+  },
+  "plugins": [
+    {
+      "name": "video-pipeline",
+      "description": "19 个短视频生产流水线 skill。编排层负责调度与确认门，原子层各管一个环节（TTS 读音校正 / 文生图 / 文生视频 / 图片运镜 / 成片合成 / 双平台封面 / 成片核验 / 数据复盘 / 四平台发布）。",
+      "version": "0.1.1",
+      "author": {
+        "name": "vfvrpq",
+        "url": "https://github.com/439436269-ctrl"
+      },
+      "category": "workflow",
+      "source": "./",
+      "homepage": "https://github.com/439436269-ctrl/video-pipeline-skills"
+    }
+  ]
+}

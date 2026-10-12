@@ -1,0 +1,25 @@
+# 只跑不需要 Claude Code CLI 的检查。
+# `npm run verify`（带 --claude）需要本机装了 claude，写进 README 让本地跑。
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # 严格解析两个 Claude 清单、校验 19 个 skill 的 frontmatter 与行尾、确认无残留占位符。
+      # 零依赖，不需要 install 步骤。
+      - name: 仓库自检
+        run: npm run verify:ci
